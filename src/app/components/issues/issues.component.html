@@ -1,0 +1,13 @@
+<app-utilities></app-utilities>
+
+
+<div>
+  list of utilities  {{this.listOfIssue.length}}
+
+  <div *ngFor = "let issue of listOfIssue">
+    <div class="issue-item">
+    <a href="javascript:void(0)" (click) = "routeToDetails(issue.number)"> {{issue.number}} </a>: {{issue.title}}
+    </div>
+
+  </div>
+</div>
